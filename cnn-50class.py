@@ -31,7 +31,7 @@ data_dir_list = os.listdir(data_path)
 img_rows=224
 img_cols=224
 num_channel=1
-num_epoch=10
+num_epoch=3
 
 # Define the number of classes
 num_classes = 50
@@ -122,7 +122,7 @@ if USE_SKLEARN_PREPROCESSING:
 # Assigning Labels
 
 # Define the number of classes
-num_classes = 10
+num_classes = 50
 
 num_of_samples = img_data.shape[0]
 labels = np.ones((num_of_samples,),dtype='int64')
